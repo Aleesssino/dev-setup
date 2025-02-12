@@ -12,7 +12,10 @@ sudo dnf install -y \
   ripgrep \
   fd-find \
   stow \
-  zsync
+  zsync \
+  curl \
+  wget \
+  gcc
 
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install -y lazygit

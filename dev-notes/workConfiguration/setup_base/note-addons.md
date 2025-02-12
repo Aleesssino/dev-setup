@@ -1,0 +1,4 @@
+- node
+- nvm
+- pnpm
+- cargo
