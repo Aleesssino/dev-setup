@@ -153,6 +153,13 @@ return {
 
       local custom_osaka = require("lualine.themes.auto")
 
+      -- This sets statusline bg to transparent
+      -- sme as:
+      -- vim.cmd([[highlight! StatusLine guibg=NONE]])
+      vim.schedule(function()
+        vim.cmd([[highlight! StatusLine guibg=NONE]])
+      end)
+
       -- Custom colours
       custom_osaka.normal.b.fg = "#cad3f5"
       custom_osaka.insert.b.fg = "#cad3f5"
@@ -186,11 +193,13 @@ return {
             {
               "branch",
               icon = "",
+              color = { bg = "NONE" },
             },
             {
               "diff",
               symbols = { added = " ", modified = " ", removed = " " },
               colored = false,
+              color = { bg = "NONE" },
             },
           },
           lualine_x = {
