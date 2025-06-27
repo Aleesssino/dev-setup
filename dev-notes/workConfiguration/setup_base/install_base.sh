@@ -33,8 +33,7 @@ fc-cache -fv
 bash <(curl -s https://updates.zen-browser.app/install.sh)
 bash <(curl https://updates.zen-browser.app/appimage.sh)
 
-# Verify installations
-echo "Installation complete!"
+echo "done"
 fzf --version
 zoxide --version
 alacritty --version

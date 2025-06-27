@@ -1,7 +1,6 @@
 cd etc/dnf
 vi dnf.conf
 -----------------------------
-# see `man dnf.conf` for defaults and possible options
 
 [main]
 gpgcheck=True
